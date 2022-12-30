@@ -3,7 +3,7 @@
     "description": "6park.com oauth code",
     "type": "library",
     "require": {
-        "guzzle/guzzle": "^3.9"
+        "guzzlehttp/guzzle": "^3.9"
     },
     "autoload": {
         "psr-4": {
