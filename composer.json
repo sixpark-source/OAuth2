@@ -10,5 +10,6 @@
             "SixparkSource\\Oauth2\\": "src/"
         }
     },
+    "license": "MIT",
     "minimum-stability": "stable"
 }
