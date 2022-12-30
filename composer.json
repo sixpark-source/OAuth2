@@ -1,0 +1,14 @@
+{
+    "name": "sixpark-source/oauth2",
+    "description": "6park.com oauth code",
+    "type": "library",
+    "require": {
+        "guzzle/guzzle": "^3.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "SixparkSource\\Oauth2\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
