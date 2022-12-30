@@ -7,4 +7,7 @@ class OAuth
     function test(){
         echo 'abc';
     }
+    function test2(){
+        echo 'abc2';
+    }
 }
