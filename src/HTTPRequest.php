@@ -2,16 +2,14 @@
 
 namespace SixparkSource\Oauth2;
 
-use GuzzleHttp\Client;
-
 class HTTPRequest
 {
     var $config;
     var $http;
-    public function HTTPRequest($config)
+    public function __construct($config)
     {
         $this->config = $config;
-        $this->http = new Client();
+        $this->http = new \GuzzleHttp\Client();
     }
 
     public function postWithAuth($url,$param)
