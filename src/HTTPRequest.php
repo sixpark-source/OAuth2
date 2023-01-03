@@ -14,17 +14,13 @@ class HTTPRequest
 
     public function postWithAuth($url,$param)
     {
-        try{
-            $request = $this->http->request("POST",$this->config['token_route'],[
-                'form_params' => $param,
-                'auth' => [$this->config['client_id'], $this->config['client_secret'],
-                ]
-            ]);
-            return $request->getBody();
-        }
-        catch(\Exception $e){
-            echo $e->getMessage();
-        }
-        return '';
+
+        $request = $this->http->request("POST",$this->config['token_route'],[
+            'form_params' => $param,
+            'auth' => [$this->config['client_id'], $this->config['client_secret'],
+            'http_errors' => false, //必须，否则会返回致命错误
+            ]
+        ]);
+        return $request->getBody();
     }
 }
