@@ -16,9 +16,9 @@ class HTTPRequest
     {
 
         $request = $this->http->request("POST",$this->config['token_route'],[
+            'http_errors' => false, //必须，否则碰到500 400就会返回致命错误，然后放第一个
             'form_params' => $param,
             'auth' => [$this->config['client_id'], $this->config['client_secret'],
-            'http_errors' => false, //必须，否则会返回致命错误
             ]
         ]);
         return $request->getBody();
