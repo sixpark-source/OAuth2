@@ -15,6 +15,7 @@
     'client_id' => APPID,
     'client_secret' => APP秘钥
     'token_route' => Token请求地址,
+    'resource_host' => 资源请求地址,
     ]; 
     //请求 Token ,获取Token首先要获取code;
     $query = array(
@@ -26,6 +27,15 @@
     $oauth = new \SixparkSource\Oauth2\OAuth($config);
     $resultJson = $oauth->requestTokenWithAuthCode(CODE);
     $result = json_decode($resultJson,true);
+    
+    //根据Token获取 资源
+    $apiHTTP = new \SixparkSource\Oauth2\HTTPRequest($config);
+    $data = [
+        'token' =>  TOKEN
+    ];
+    $user_info_json = $apiHTTP->postWithAuth($config['resource_host']."/index.php?app=user&act=userinfo",$data);
+    $user_info = json_decode($user_info_json,true);
+    print_r($user_info);
 ?>
 
 ```
