@@ -1,0 +1,31 @@
+{
+    "created_time": "2023-01-03T09:49:56Z",
+    "files": [
+        {
+            "attachment_folder": "",
+            "created_time": "2023-01-03T09:50:45Z",
+            "id": "2",
+            "modified_time": "2023-01-05T12:23:00Z",
+            "name": "资源接口文档.md",
+            "signature": "79316833794677",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "created_time": "2023-01-05T12:23:56Z",
+            "id": "3",
+            "modified_time": "2023-01-07T10:21:21Z",
+            "name": "Auth2.0接口指南.md",
+            "signature": "177766580572",
+            "tags": [
+            ]
+        }
+    ],
+    "folders": [
+    ],
+    "id": "1",
+    "modified_time": "2023-01-03T09:49:56Z",
+    "signature": "177766398532",
+    "version": 3
+}

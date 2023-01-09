@@ -1,0 +1,15 @@
+{
+    "attachment_folder": "vx_attachments",
+    "config_mgr": "vx.vnotex",
+    "created_time": "2023-01-03T09:49:56Z",
+    "description": "留园网第三方接口文档",
+    "extra_configs": {
+    },
+    "history": [
+    ],
+    "image_folder": "vx_images",
+    "name": "sixpark_sourece_doc",
+    "tag_graph": "",
+    "version": 3,
+    "version_controller": "dummy.vnotex"
+}
