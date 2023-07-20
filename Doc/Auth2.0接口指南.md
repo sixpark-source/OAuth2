@@ -34,8 +34,8 @@ F. 资源服务器验证令牌无误后将用户信息发放给客户端。
 #### 资源地址
 | 资源类型      |                   域名                    |                说明                 |
 | :------------ | ---------------------------------------- | ----------------------------------- |
-| 授权地址      | https://auth.6park.com/index.php?app=authorize | 获取用户授权,获取 Authorization Code |
-| Token获取地址 | https://auth.6park.com/index.php?app=token     | 获取资源访问token                    |
+| 授权地址      | https://auth.ez121.com/index.php?app=authorize | 获取用户授权,获取 Authorization Code |
+| Token获取地址 | https://auth.ez121.com/index.php?app=token     | 获取资源访问token                    |
 | 资源服务器     | https://resource.e2bo.com                | 使用token获取对应的网站资源           |
 
 
